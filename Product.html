@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menu Kopi Sederhana — kopi tubruk, kopi susu gula aren, americano single origin, matcha, dan camilan. Harga mulai Rp15 ribu." />
+  <title>Products — Kopi Sederhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="produk.css" />
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <header class="navbar">
+    <a href="web.html" class="brand-logo" aria-label="Kopi Sederhana - Beranda">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+      Kopi<span>Sederhana</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-links" id="navMenu">
+        <li><a href="web.html">Home</a></li>
+        <li><a href="Product.html" class="active" aria-current="page">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero-inner">
+        <p class="breadcrumb"><a href="web.html">Home</a> / Products</p>
+        <h1 id="page-title">Menu <em>Kopi Sederhana</em></h1>
+        <p>Semua diseduh saat dipesan. Pilih kategorinya, klik pesan, dan kami siapkan dalam &lt; 5 menit.</p>
+      </div>
+    </section>
+
+    <div class="filter-bar" role="group" aria-label="Filter kategori menu">
+      <button class="filter-chip active" data-filter="semua" aria-pressed="true">Semua</button>
+      <button class="filter-chip" data-filter="kopi" aria-pressed="false">Kopi</button>
+      <button class="filter-chip" data-filter="nonkopi" aria-pressed="false">Non-Kopi</button>
+      <button class="filter-chip" data-filter="snack" aria-pressed="false">Snack</button>
+      <p class="filter-count" id="filterCount" role="status" aria-live="polite">Menampilkan 6 dari 6 menu</p>
+    </div>
+
+    <section class="menu-section" aria-label="Daftar menu">
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="kopi">
+          <div class="menu-visual menu-visual--tubruk">
+            <img src="images/kopi-tubruk.jpg" alt="Kopi tubruk hitam pekat dituang ke cangkir putih" width="800" height="600" loading="lazy" />
+            <span class="menu-tag">Best Seller</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Kopi • Panas / Es</p>
+            <h3>Kopi Tubruk Sederhana</h3>
+            <p>Robusta Temanggung pekat, gula aren asli. Pahit-manis klasik khas warung.</p>
+            <div class="menu-meta">
+              <span class="price">Rp15.000<small>Reguler 200ml</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="kopi">
+          <div class="menu-visual menu-visual--aren">
+            <img src="images/kopi-susu-aren.jpg" alt="Kopi susu gula aren dingin dengan pusaran susu dalam gelas tinggi" width="800" height="600" loading="lazy" />
+            <span class="menu-tag">Favorit</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Kopi • Es</p>
+            <h3>Kopi Susu Gula Aren</h3>
+            <p>Double shot espresso, susu segar, aren Enrekang. Creamy, manisnya pas.</p>
+            <div class="menu-meta">
+              <span class="price">Rp22.000<small>Reguler 250ml</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="kopi">
+          <div class="menu-visual menu-visual--americano">
+            <img src="images/americano-gayo.jpg" alt="Bersulang dengan kopi, termasuk segelas americano dingin" width="800" height="600" loading="lazy" />
+            <span class="menu-tag">Single Origin</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Kopi • Panas / Es</p>
+            <h3>Americano Gayo</h3>
+            <p>Arabika Gayo wine-processed. Bersih, notes cokelat dan buah tropis.</p>
+            <div class="menu-meta">
+              <span class="price">Rp20.000<small>Reguler 240ml</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="kopi">
+          <div class="menu-visual menu-visual--latte">
+            <img src="images/caffe-latte.jpg" alt="Caffe latte dengan latte art daun di cangkir putih" width="800" height="600" loading="lazy" />
+            <span class="menu-tag">Barista Pick</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Kopi • Panas</p>
+            <h3>Caffe Latte Toraja</h3>
+            <p>Arabika Toraja Sapan dengan susu steamed silky dan latte art.</p>
+            <div class="menu-meta">
+              <span class="price">Rp25.000<small>Reguler 280ml</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="nonkopi">
+          <div class="menu-visual menu-visual--matcha">
+            <img src="images/matcha-latte.jpg" alt="Matcha latte hijau dengan latte art daun di cangkir putih" width="800" height="600" loading="lazy" />
+            <span class="menu-tag menu-tag--new">Baru</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Non-Kopi • Panas / Es</p>
+            <h3>Matcha Latte</h3>
+            <p>Bubuk matcha ceremonial-grade, susu oat opsional. Earthy dan calming.</p>
+            <div class="menu-meta">
+              <span class="price">Rp24.000<small>Reguler 250ml</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="snack">
+          <div class="menu-visual menu-visual--snack">
+            <img src="images/pisang-goreng.jpg" alt="Pisang goreng renyah dengan topping manis" width="800" height="600" loading="lazy" />
+            <span class="menu-tag">Teman Ngopi</span>
+          </div>
+          <div class="menu-body">
+            <p class="menu-cat">Snack • Goreng Fresh</p>
+            <h3>Pisang Goreng Aren</h3>
+            <p>Pisang raja goreng garing dengan lelehan gula aren dan taburan keju.</p>
+            <div class="menu-meta">
+              <span class="price">Rp18.000<small>Isi 5 potong</small></span>
+              <a class="btn-order" href="Contact.html">Pesan</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="info-strip">
+      <div class="info-card"><strong>Extra Shot +Rp5rb</strong><span>Untuk semua menu kopi, kapan pun.</span></div>
+      <div class="info-card"><strong>Oat / Soy +Rp4rb</strong><span>Opsi susu nabati untuk latte &amp; matcha.</span></div>
+      <div class="info-card"><strong>Ngopi Pagi Hemat 10%</strong><span>Senin–Jumat, 07.00–10.00, dine-in.</span></div>
+    </div>
+
+    <div class="cta-wrap">
+      <div class="cta-banner">
+        <h2>Bingung Pilih? Tanya Barista Kami.</h2>
+        <p>Ceritakan seleramu — manis, pahit, atau light — kami racikkan yang pas.</p>
+        <a href="Contact.html" class="btn-light">Hubungi Kami</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <a href="web.html" class="footer-brand">Kopi<em>Sederhana</em></a>
+        <p>Kedai kopi artisan Indonesia. Biji lokal pilihan, diseduh dengan jujur sejak 2018.</p>
+      </div>
+      <nav aria-label="Tautan halaman">
+        <h4>Jelajah</h4>
+        <ul>
+          <li><a href="web.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Jam Buka</h4>
+        <ul>
+          <li><span>Senin – Jumat: 07.00 – 22.00</span></li>
+          <li><span>Sabtu – Minggu: 08.00 – 23.00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="Contact.html">Jl. Merdeka No. 12, Bandung</a></li>
+          <li><a href="tel:+6222201818">(022) 201-818</a></li>
+          <li><a href="mailto:halo@kopisederhana.id">halo@kopisederhana.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Kopi Sederhana. Hak cipta dilindungi.</span>
+      <span>Diseduh dengan bangga di Indonesia</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('navMenu');
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      var chips = document.querySelectorAll('.filter-chip');
+      var cards = document.querySelectorAll('.menu-card');
+      var count = document.getElementById('filterCount');
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          chips.forEach(function (c) {
+            c.classList.remove('active');
+            c.setAttribute('aria-pressed', 'false');
+          });
+          chip.classList.add('active');
+          chip.setAttribute('aria-pressed', 'true');
+          var f = chip.getAttribute('data-filter');
+          var shown = 0;
+          cards.forEach(function (card) {
+            var show = f === 'semua' || card.getAttribute('data-category') === f;
+            card.classList.toggle('hidden', !show);
+            if (show) shown++;
+          });
+          count.textContent = 'Menampilkan ' + shown + ' dari ' + cards.length + ' menu';
+        });
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
