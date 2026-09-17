@@ -3,68 +3,304 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kopi Sederhana</title>
-  <!-- Google Font: Inter & Poppins -->
+  <meta name="description" content="Kopi Sederhana — kedai kopi artisan Indonesia. Biji arabika pilihan, diseduh manual dengan harga bersahabat." />
+  <title>Kopi Sederhana — Kedai Kopi Artisan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* RESET & DASAR */
-    
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-  <!-- 1. NAVBAR (Satu box/bar horizontal) -->
+  <!-- NAVBAR -->
   <header class="navbar">
-    <!-- Sebelah Kiri: Nama Toko -->
-    <a href="#" class="brand-logo">Kopi<span>Sederhana</span></a>
+    <a href="web.html" class="brand-logo" aria-label="Kopi Sederhana - Beranda">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+      Kopi<span>Sederhana</span>
+    </a>
 
-    <!-- Sebelah Kanan: Menu Navigasi -->
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-links" id="navMenu">
+        <li><a href="web.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 2. BODY / HERO SECTION (1 Halaman Layar) -->
-  <main class="hero">
-    <div class="hero-container">
-      
-      <!-- Sebelah Kiri: Headline, Deskripsi, Tombol -->
-      <div class="hero-content">
-        <h1 class="hero-title">Awali harimu dengan secangkir
-        <span class="kopi">Kopi</span><span class="highlght">Sederhana</span> </h1>
-        <p class="hero-desc">
-          Selamat datang di Toko Sederhana! Kami menghadirkan produk berkualitas tinggi pilihan dengan harga terbaik dan pelayanan cepat langsung ke tangan Anda.
-        </p>
-        <div class="hero-actions">
-          <a href="#pesan" class="btn-primary">Pesan Sekarang</a>
-          <a href="#products" class="btn-secondary">Lihat Detail &darr;</a>
+  <main id="konten">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-badge"><span class="dot" aria-hidden="true"></span> 100% Biji Arabika Pilihan Petani Lokal</p>
+          <h1 class="hero-title" id="hero-title">Awali Harimu dengan Secangkir <em>Kopi Sederhana</em></h1>
+          <p class="hero-desc">
+            Dari kebun dataran tinggi Nusantara ke cangkirmu — disangrai fresh setiap minggu
+            dan diseduh manual oleh barista kami. Rasa yang jujur, harga yang bersahabat.
+          </p>
+          <div class="hero-actions">
+            <a href="Product.html" class="btn-primary">
+              Pesan Sekarang
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#menu" class="btn-secondary">Lihat Menu</a>
+          </div>
+          <ul class="hero-stats" aria-label="Kepercayaan pelanggan">
+            <li>
+              <strong><span class="stars" aria-hidden="true">★★★★★</span> 4.9</strong>
+              <span>2.400+ ulasan Google</span>
+            </li>
+            <li>
+              <strong>12K+</strong>
+              <span>Cangkir tersaji tiap bulan</span>
+            </li>
+            <li>
+              <strong>8 Tahun</strong>
+              <span>Menyeduh sejak 2018</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img
+            src="Bg Kopi.jpg"
+            alt="Secangkir kopi susu dengan latte art di atas meja kayu"
+            class="product-img"
+            width="860"
+            height="1075"
+            fetchpriority="high"
+          />
+          <div class="float-card float-card--top" aria-hidden="true">
+            <span class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </span>
+            <span>Sangrai Fresh<small>Setiap Senin &amp; Kamis</small></span>
+          </div>
+          <div class="float-card float-card--bottom" aria-hidden="true">
+            <span class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span>Saji &lt; 5 Menit<small>Dine-in &amp; takeaway</small></span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Sebelah Kanan: Foto Produk -->
-      <div class="hero-image-wrapper">
-        <img 
-          src="Bg Kopi.jpg" 
-          alt="Foto Produk Unggulan" 
-          class="product-img"
-        />
+    <!-- KEUNGGULAN -->
+    <section class="section" aria-labelledby="fitur-title">
+      <div class="section-inner">
+        <p class="section-eyebrow">Kenapa Kami</p>
+        <h2 class="section-title" id="fitur-title">Sederhana di Nama, Serius di Rasa</h2>
+        <p class="section-sub">Tiga hal yang kami jaga setiap hari agar setiap cangkir selalu konsisten.</p>
+        <div class="features">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </span>
+            <h3>Biji Pilihan Grade 1</h3>
+            <p>Arabika Gayo &amp; Toraja dari petani mitra, disortir manual dan disangrai medium untuk manis alami.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            </span>
+            <h3>Diseduh Manual</h3>
+            <p>V60, tubruk, dan espresso — setiap metode dikalibrasi harian oleh barista bersertifikat.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <h3>Harga Bersahabat</h3>
+            <p>Mulai Rp15 ribu. Kualitas kafe premium tanpa bikin kantong bolong — setiap hari.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <!-- MENU UNGGULAN -->
+    <section class="section menu-preview" id="menu" aria-labelledby="menu-title">
+      <div class="section-inner">
+        <p class="section-eyebrow">Menu Unggulan</p>
+        <h2 class="section-title" id="menu-title">Paling Sering Dipesan</h2>
+        <p class="section-sub">Tiga favorit pelanggan yang wajib kamu coba di kunjungan pertama.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-visual product-visual--tubruk">
+              <img src="images/kopi-tubruk.jpg" alt="Kopi tubruk hitam pekat dituang ke cangkir putih" width="800" height="600" loading="lazy" />
+              <span class="product-tag">Best Seller</span>
+            </div>
+            <div class="product-body">
+              <h3>Kopi Tubruk Sederhana</h3>
+              <p>Robusta Temanggung pekat dengan gula aren asli. Klasik yang tak pernah salah.</p>
+              <div class="product-meta">
+                <span class="price">Rp15.000</span>
+                <a class="link-more" href="Product.html">Detail →</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual product-visual--aren">
+              <img src="images/kopi-susu-aren.jpg" alt="Kopi susu gula aren dingin dengan pusaran susu dalam gelas tinggi" width="800" height="600" loading="lazy" />
+              <span class="product-tag">Favorit</span>
+            </div>
+            <div class="product-body">
+              <h3>Kopi Susu Gula Aren</h3>
+              <p>Espresso double shot, susu segar, dan aren Enrekang. Manisnya pas, creamy.</p>
+              <div class="product-meta">
+                <span class="price">Rp22.000</span>
+                <a class="link-more" href="Product.html">Detail →</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual product-visual--americano">
+              <img src="images/americano-gayo.jpg" alt="Bersulang dengan kopi, termasuk segelas americano dingin" width="800" height="600" loading="lazy" />
+              <span class="product-tag">Single Origin</span>
+            </div>
+            <div class="product-body">
+              <h3>Americano Gayo</h3>
+              <p>Arabika Gayo wine-processed, bersih dengan aftertaste cokelat dan buah.</p>
+              <div class="product-meta">
+                <span class="price">Rp20.000</span>
+                <a class="link-more" href="Product.html">Detail →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="center-cta">
+          <a href="Product.html" class="btn-primary">Lihat Semua Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERITA -->
+    <section class="section" aria-labelledby="cerita-title">
+      <div class="section-inner story-grid">
+        <img src="Bg Kopi.jpg" alt="Barista menyeduh kopi manual di kedai Kopi Sederhana" class="story-img" width="800" height="600" loading="lazy" />
+        <div>
+          <p class="section-eyebrow">Cerita Kami</p>
+          <h2 class="section-title" id="cerita-title">Dari Warung Kecil Sejak 2018</h2>
+          <p class="section-sub">Berawal dari gerobak di sudut jalan, kini Kopi Sederhana bermitra langsung dengan 12 kelompok tani di Gayo, Toraja, dan Temanggung.</p>
+          <ul class="check-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Harga adil petani</strong> — beli putus di atas harga pasar, tanpa tengkulak.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Sangrai kecil mingguan</strong> — maksimal 5 kg per batch agar selalu fresh.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Nol ampas terbuang</strong> — ampas diolah jadi scrub dan pupuk komunitas.</span>
+            </li>
+          </ul>
+          <a href="Contact.html" class="btn-secondary">Kunjungi Kedai Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="section testimonials" aria-labelledby="testi-title">
+      <div class="section-inner">
+        <p class="section-eyebrow">Kata Pelanggan</p>
+        <h2 class="section-title" id="testi-title">Cerita dari Meja Nomor 7</h2>
+        <p class="section-sub">2.400+ ulasan bintang 5 — ini sebagian kecil yang bikin kami semangat.</p>
+        <div class="testi-grid">
+          <article class="testi-card">
+            <span class="stars" aria-label="Rating 5 dari 5">★★★★★</span>
+            <blockquote>“Kopi susunya juara. Gula arennya berasa asli, bukan sirup. Baristanya juga ramah banget, dijelasin asal bijinya.”</blockquote>
+            <div class="testi-user">
+              <span class="avatar" aria-hidden="true">RA</span>
+              <div><strong>Rani Amelia</strong><span>Mahasiswi • Pelanggan sejak 2021</span></div>
+            </div>
+          </article>
+          <article class="testi-card">
+            <span class="stars" aria-label="Rating 5 dari 5">★★★★★</span>
+            <blockquote>“Tempat favorit buat kerja. WiFi kencang, colokan banyak, dan Americano Gayo-nya konsisten enak tiap pesan.”</blockquote>
+            <div class="testi-user">
+              <span class="avatar" aria-hidden="true">DP</span>
+              <div><strong>Dimas Prasetyo</strong><span>Freelancer • Hampir tiap hari</span></div>
+            </div>
+          </article>
+          <article class="testi-card">
+            <span class="stars" aria-label="Rating 5 dari 5">★★★★★</span>
+            <blockquote>“Akhirnya ada kedai yang jujur soal biji. Ditanya mau yang fruity atau bold, disesuaikan. Harga segini rasa segini, worth it.”</blockquote>
+            <div class="testi-user">
+              <span class="avatar" aria-hidden="true">SL</span>
+              <div><strong>Sinta Lestari</strong><span>Ibu rumah tangga • Pecinta tubruk</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="section-inner">
+        <div class="cta-banner">
+          <h2 id="cta-title">Haus Kopi Enak? Mampir Hari Ini.</h2>
+          <p>Buka setiap hari 07.00–22.00. Pesan duluan lewat WhatsApp biar nggak antre.</p>
+          <a href="Contact.html" class="btn-light">Hubungi Kami</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Placeholder untuk section scroll menu produk (akan diisi di prompt berikutnya) -->
-  <section class="product" id="products">
-    <p>(Product Menu)</p>
-    
-  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <a href="web.html" class="footer-brand">Kopi<em>Sederhana</em></a>
+        <p>Kedai kopi artisan Indonesia. Biji lokal pilihan, diseduh dengan jujur sejak 2018.</p>
+      </div>
+      <nav aria-label="Tautan halaman">
+        <h4>Jelajah</h4>
+        <ul>
+          <li><a href="web.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Jam Buka</h4>
+        <ul>
+          <li><span>Senin – Jumat: 07.00 – 22.00</span></li>
+          <li><span>Sabtu – Minggu: 08.00 – 23.00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="Contact.html">Jl. Merdeka No. 12, Bandung</a></li>
+          <li><a href="tel:+6222201818">(022) 201-818</a></li>
+          <li><a href="mailto:halo@kopisederhana.id">halo@kopisederhana.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Kopi Sederhana. Hak cipta dilindungi.</span>
+      <span>Diseduh dengan bangga di Indonesia</span>
+    </div>
+  </footer>
 
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('navMenu');
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
