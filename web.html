@@ -1,150 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Rijal</title>
-  <link rel="stylesheet" href="sc.css" />
+  <title>Kopi Sederhana</title>
+  <!-- Google Font: Inter & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Fira+Code:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* RESET & DASAR */
+    
+  </style>
 </head>
-
 <body>
-  <!-- PEMBUNGKUS UTAMA (Dibagi 2: Kiri & Kanan) -->
-  <div class="container">
-    <!-- BAGIAN KIRI (Fixed / Diam) -->
-    <header class="left-sidebar">
-      <div class="header-content">
-        <h1>Rijal Abdurrahman</h1>
-        <h2>Informatics Student</h2>
-        <p>
-          A college student who enjoys keeping up with the latest
-          technological developments
-        </p>
 
-        <!-- Navbar / Menu Navigasi -->
-        <nav class="nav-menu">
-          <ul>
-            <li>
-              <a href="#about" class="nav-link">
-                <span class="nav-indicator"></span>
-                <span class="nav-text">ABOUT</span>
-              </a>
-            </li>
-            <li>
-              <a href="#experience" class="nav-link">
-                <span class="nav-indicator"></span>
-                <span class="nav-text">EXPERIENCE</span>
-              </a>
-            </li>
-            <li>
-              <a href="#projects" class="nav-link">
-                <span class="nav-indicator"></span>
-                <span class="nav-text">PROJECTS</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <ul class="social-media">
-        <li>
-          <a href="https://github.com/SnoopyDes" target="_blank" class="social-icon1">
-            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/rjelly.drink_/" target="_blank" class="social-icon1">
-            <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_iconCarrier">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" />
-                <path
-                  d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" />
-              </g>
+  <!-- 1. NAVBAR (Satu box/bar horizontal) -->
+  <header class="navbar">
+    <!-- Sebelah Kiri: Nama Toko -->
+    <a href="#" class="brand-logo">Kopi<span>Sederhana</span></a>
 
-            </svg>
-          </a>
-        </li>
+    <!-- Sebelah Kanan: Menu Navigasi -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </header>
+    </nav>
+  </header>
 
-    <!-- BAGIAN KANAN (Bisa Di-scroll) -->
-    <main class="right-content">
-      <section class="about" id="about">
-        <p>
-          Hello everyone! My name is Rijal Abdurrahman, and I am a student majoring in Informatics at the University of
-          Sultan Ageng Tirtayasa. I have a strong passion for technology and enjoy exploring the latest developments in the field. In
-          my free time, I like to work on personal projects, contribute to open-source communities, and stay updated
-          with tech news. I am always eager to learn new skills and take on challenges that allow me to grow both
-          personally and professionally.
+  <!-- 2. BODY / HERO SECTION (1 Halaman Layar) -->
+  <main class="hero">
+    <div class="hero-container">
+      
+      <!-- Sebelah Kiri: Headline, Deskripsi, Tombol -->
+      <div class="hero-content">
+        <h1 class="hero-title">Awali harimu dengan secangkir
+        <span class="kopi">Kopi</span><span class="highlght">Sederhana</span> </h1>
+        <p class="hero-desc">
+          Selamat datang di Toko Sederhana! Kami menghadirkan produk berkualitas tinggi pilihan dengan harga terbaik dan pelayanan cepat langsung ke tangan Anda.
         </p>
-        <p>
-          Because of the rapid pace of development in this digital age, I’ve come to enjoy things like exploring new
-          ideas, solving problems, and delving into programming. What I find most fascinating is when I try to create a
-          program and encounter a problem that takes quite a while to resolve. Right now, I’m just a student at one of
-          the most renowned universities in Banten: Sultan Ageng Tirtayasa University. That’s pretty much what I
-          enjoy—it’s a pleasure to get to know all of you, dear readers.
-        </p>
-      </section>
-
-      <section id="experience">
-        <p>
-          I may not have much experience, but every experience I’ve had has played its own role.
-        </p>
-        <div class="dummy-box">
-          <p class="date">2022-2024
-          <p class="exp">Student Council Vice President
-            <br></br>
-            <p2 class="desc">I served as vice president of the student council while I was in high school. Led the
-              student council in organizing events and managing student affairs.</p2>
-          </p>
-          </p>
+        <div class="hero-actions">
+          <a href="#pesan" class="btn-primary">Pesan Sekarang</a>
+          <a href="#products" class="btn-secondary">Lihat Detail &darr;</a>
         </div>
-        <a href="Sertifikat Provinsi Olimpiade Fisika.jpg">
-          <div class="dummy-box">
-            <p class="date">2023
-            <p class="exp">Third Place in the Physics Olympiad
-              <br></br>
-              <p2 class="desc">I won third place in the provincial physics competition in 2023, which was organized by
-                UIN Banten.</p2>
-            </p>
-            </p>
-          </div>
-        </a>
-        <a href="Sertifikat Provinsi Olimpiade Matematika.jpg">
-          <div class="dummy-box">
-            <p class="date">2023
-            <p class="exp">National Math Olympiad Semifinalists
-              <br></br>
-              <p2 class="desc">This competition was organized by Primagama. During the competition, there were several
-                rounds of selection, starting at the school level, then the city level, the provincial level, and
-                finally the national level. Unfortunately, I only made it to the semifinals at the national level.</p2>
-            </p>
-            </p>
-          </div>
-        </a>
-      </section>
+      </div>
 
-      <section id="projects">
-        <p>
-        </p>
-        <div class="dummy-box"></div>
-      </section>
-    </main>
-  </div>
+      <!-- Sebelah Kanan: Foto Produk -->
+      <div class="hero-image-wrapper">
+        <img 
+          src="Bg Kopi.jpg" 
+          alt="Foto Produk Unggulan" 
+          class="product-img"
+        />
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Placeholder untuk section scroll menu produk (akan diisi di prompt berikutnya) -->
+  <section class="product" id="products">
+    <p>(Product Menu)</p>
+    
+  </section>
+
 </body>
-
 </html>
