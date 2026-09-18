@@ -1,12 +1,4 @@
-/* ============================================================
-   KOPI SEDERHANA — Design System (ui-ux-pro-max)
-   Pattern : Hero + Testimonials + CTA (hero-testimonials-cta)
-   Style   : Nature Distilled — warm artisan earthy
-   Palette : Bakery/Cafe terverifikasi — Primary #92400E,
-             Secondary #B45309, Cream #FFFBEB / #FEF3C7,
-             Espresso text #1C1917 (kontras ≥ 4.5:1)
-   Type    : Fraunces (display serif) + Plus Jakarta Sans (body)
-   ============================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
@@ -78,7 +70,6 @@ h1, h2, h3 {
   color: var(--color-foreground);
 }
 
-/* ---------- Aksesibilitas: skip link & fokus ---------- */
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -107,7 +98,7 @@ select:focus-visible {
   border-radius: 4px;
 }
 
-/* ---------- NAVBAR ---------- */
+/*Navbar*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -187,7 +178,7 @@ select:focus-visible {
   color: var(--color-foreground);
 }
 
-/* ---------- HERO ---------- */
+/* HERO  */
 .hero {
   padding: var(--space-8) 5% var(--space-6);
   position: relative;
@@ -313,35 +304,7 @@ select:focus-visible {
   background: var(--color-wash);
 }
 
-/* Social proof stats */
-.hero-stats {
-  display: flex;
-  gap: var(--space-3);
-  flex-wrap: wrap;
-  list-style: none;
-}
 
-.hero-stats li {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-stats strong {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  color: var(--color-foreground);
-}
-
-.hero-stats span {
-  font-size: 0.85rem;
-  color: var(--color-muted);
-}
-
-.hero-stats .stars {
-  color: var(--color-accent);
-  letter-spacing: 2px;
-  font-size: 0.9rem;
-}
 
 /* Hero visual */
 .hero-image-wrapper {
@@ -449,7 +412,7 @@ select:focus-visible {
   margin-bottom: var(--space-4);
 }
 
-/* ---------- Keunggulan ---------- */
+/*fitur */
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -494,7 +457,7 @@ select:focus-visible {
   color: #57534e;
 }
 
-/* ---------- Produk preview ---------- */
+/* produk*/
 .menu-preview {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
@@ -621,44 +584,9 @@ select:focus-visible {
   margin-top: var(--space-4);
 }
 
-/* ---------- Cerita / craft ---------- */
-.story-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: var(--space-6);
-  align-items: center;
-}
 
-.story-img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
 
-.check-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  margin: var(--space-3) 0;
-}
-
-.check-list li {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
-  font-size: 0.97rem;
-}
-
-.check-list svg {
-  flex-shrink: 0;
-  margin-top: 3px;
-  color: var(--color-success);
-}
-
-/* ---------- Testimoni ---------- */
+/* testimoni */
 .testimonials {
   background: var(--color-primary-dark);
   color: #fef3c7;
@@ -690,47 +618,9 @@ select:focus-visible {
   min-height: 140px;
 }
 
-.testi-card .stars {
-  color: #fbbf24;
-  letter-spacing: 2px;
-}
 
-.testi-card blockquote {
-  font-size: 0.97rem;
-  line-height: 1.7;
-  flex: 1;
-}
 
-.testi-user {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  color: #fff;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.testi-user strong {
-  display: block;
-  font-size: 0.95rem;
-}
-
-.testi-user span {
-  font-size: 0.8rem;
-  color: #d6cdb4;
-}
-
-/* ---------- CTA banner ---------- */
+/* banner */
 .cta-banner {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   border-radius: var(--radius-lg);
@@ -773,7 +663,7 @@ select:focus-visible {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------- FOOTER ---------- */
+/* footer */
 .footer {
   background: var(--color-foreground);
   color: #d6d3d1;
@@ -848,7 +738,7 @@ select:focus-visible {
   color: #a8a29e;
 }
 
-/* ---------- Responsif ---------- */
+/* responsif */
 @media (max-width: 1024px) {
   .features,
   .product-grid,
@@ -866,8 +756,7 @@ select:focus-visible {
     padding-top: var(--space-4);
   }
 
-  .hero-container,
-  .story-grid {
+  .hero-container {
     grid-template-columns: 1fr;
   }
 
@@ -878,8 +767,7 @@ select:focus-visible {
     align-items: center;
   }
 
-  .hero-actions,
-  .hero-stats {
+  .hero-actions {
     justify-content: center;
   }
 
@@ -940,7 +828,7 @@ select:focus-visible {
   }
 }
 
-/* ---------- Reduced motion ---------- */
+/* motion */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

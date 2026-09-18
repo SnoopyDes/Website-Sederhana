@@ -1,7 +1,4 @@
-/* ============================================================
-   KOPI SEDERHANA — Product page
-   Token & komponen dasar selaras dengan style.css (consistency).
-   ============================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
@@ -63,7 +60,7 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px; border-radius: 4px;
 }
 
-/* ---------- NAVBAR (sama seperti Home) ---------- */
+/* navbar */
 .navbar {
   display: flex; justify-content: space-between; align-items: center;
   padding: 1rem 5%;
@@ -93,7 +90,7 @@ a:focus-visible, button:focus-visible {
   align-items: center; justify-content: center; color: var(--color-foreground);
 }
 
-/* ---------- PAGE HERO ---------- */
+/* page */
 .page-hero {
   padding: 3.5rem 5% 2.5rem;
   background: linear-gradient(180deg, var(--color-wash) 0%, var(--color-background) 100%);
@@ -109,7 +106,7 @@ a:focus-visible, button:focus-visible {
 .page-hero h1 em { font-style: italic; color: var(--color-primary); }
 .page-hero p { color: #57534e; max-width: 36rem; margin: 0 auto; }
 
-/* ---------- FILTER ---------- */
+/* filter */
 .filter-bar {
   max-width: 1140px; margin: 0 auto;
   padding: 1.75rem 5% 0;
@@ -129,7 +126,7 @@ a:focus-visible, button:focus-visible {
   width: 100%; text-align: center; font-size: 0.85rem; color: var(--color-muted);
 }
 
-/* ---------- GRID PRODUK ---------- */
+/* grid produk */
 .menu-section { padding: 1.5rem 5% 4rem; }
 .menu-grid {
   max-width: 1140px; margin: 0 auto;
@@ -191,7 +188,7 @@ a:focus-visible, button:focus-visible {
 }
 .btn-order:hover { background: var(--color-primary-dark); transform: translateY(-1px); }
 
-/* ---------- INFO STRIP ---------- */
+/* informasi */
 .info-strip {
   max-width: 1140px; margin: 0 auto 4rem; padding: 0 5%;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
@@ -203,7 +200,7 @@ a:focus-visible, button:focus-visible {
 .info-card strong { display: block; font-size: 1.05rem; margin-bottom: 0.3rem; }
 .info-card span { font-size: 0.9rem; color: #57534e; }
 
-/* ---------- CTA + FOOTER ---------- */
+/* footer*/
 .cta-wrap { max-width: 1140px; margin: 0 auto; padding: 0 5% 1rem; }
 .cta-banner {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
@@ -243,7 +240,7 @@ a:focus-visible, button:focus-visible {
   font-size: 0.82rem; color: #a8a29e;
 }
 
-/* ---------- Responsif ---------- */
+/* responsif */
 @media (max-width: 1024px) {
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .info-strip { grid-template-columns: 1fr; }
